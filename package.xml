@@ -16,7 +16,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-09-19</date>
+ <date>2017-10-17</date>
  <version>
   <release>2.0.6</release>
   <api>1.0.0</api>
@@ -31,13 +31,6 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
-   <dir name="doc">
-    <dir name="Horde">
-     <dir name="Editor">
-      <file name="COPYING" role="doc" />
-     </dir> <!-- /doc/Horde/Editor -->
-    </dir> <!-- /doc/Horde -->
-   </dir> <!-- /doc -->
    <dir name="js">
     <dir name="ckeditor">
      <dir name="images">
@@ -594,6 +587,7 @@
      <file name="Editor.php" role="php" />
     </dir> <!-- /lib/Horde -->
    </dir> <!-- /lib -->
+   <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -636,13 +630,10 @@
  </usesrole>
  <phprelease>
   <filelist>
-   <install as="COPYING" name="doc/Horde/Editor/COPYING" />
    <install as="js/ckeditor/ckeditor.js" name="js/ckeditor/ckeditor.js" />
    <install as="js/ckeditor/ckeditor_basic.js" name="js/ckeditor/ckeditor_basic.js" />
    <install as="js/ckeditor/config.js" name="js/ckeditor/config.js" />
    <install as="js/ckeditor/contents.css" name="js/ckeditor/contents.css" />
-   <install as="js/ckeditor/LICENSE.html" name="js/ckeditor/LICENSE.html" />
-   <install as="js/ckeditor/nomargin.css" name="js/ckeditor/nomargin.css" />
    <install as="js/ckeditor/images/spacer.gif" name="js/ckeditor/images/spacer.gif" />
    <install as="js/ckeditor/lang/af.js" name="js/ckeditor/lang/af.js" />
    <install as="js/ckeditor/lang/ar.js" name="js/ckeditor/lang/ar.js" />
@@ -708,6 +699,8 @@
    <install as="js/ckeditor/lang/zh-cn.js" name="js/ckeditor/lang/zh-cn.js" />
    <install as="js/ckeditor/lang/zh.js" name="js/ckeditor/lang/zh.js" />
    <install as="js/ckeditor/lang/_languages.js" name="js/ckeditor/lang/_languages.js" />
+   <install as="js/ckeditor/LICENSE.html" name="js/ckeditor/LICENSE.html" />
+   <install as="js/ckeditor/nomargin.css" name="js/ckeditor/nomargin.css" />
    <install as="js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" name="js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
    <install as="js/ckeditor/plugins/a11yhelp/lang/cs.js" name="js/ckeditor/plugins/a11yhelp/lang/cs.js" />
    <install as="js/ckeditor/plugins/a11yhelp/lang/cy.js" name="js/ckeditor/plugins/a11yhelp/lang/cy.js" />
@@ -743,7 +736,6 @@
    <install as="js/ckeditor/plugins/bbcode/plugin.js" name="js/ckeditor/plugins/bbcode/plugin.js" />
    <install as="js/ckeditor/plugins/clipboard/dialogs/paste.js" name="js/ckeditor/plugins/clipboard/dialogs/paste.js" />
    <install as="js/ckeditor/plugins/colordialog/dialogs/colordialog.js" name="js/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-   <install as="js/ckeditor/plugins/devtools/plugin.js" name="js/ckeditor/plugins/devtools/plugin.js" />
    <install as="js/ckeditor/plugins/devtools/lang/bg.js" name="js/ckeditor/plugins/devtools/lang/bg.js" />
    <install as="js/ckeditor/plugins/devtools/lang/cs.js" name="js/ckeditor/plugins/devtools/lang/cs.js" />
    <install as="js/ckeditor/plugins/devtools/lang/cy.js" name="js/ckeditor/plugins/devtools/lang/cy.js" />
@@ -773,10 +765,11 @@
    <install as="js/ckeditor/plugins/devtools/lang/uk.js" name="js/ckeditor/plugins/devtools/lang/uk.js" />
    <install as="js/ckeditor/plugins/devtools/lang/vi.js" name="js/ckeditor/plugins/devtools/lang/vi.js" />
    <install as="js/ckeditor/plugins/devtools/lang/zh-cn.js" name="js/ckeditor/plugins/devtools/lang/zh-cn.js" />
+   <install as="js/ckeditor/plugins/devtools/plugin.js" name="js/ckeditor/plugins/devtools/plugin.js" />
    <install as="js/ckeditor/plugins/dialog/dialogDefinition.js" name="js/ckeditor/plugins/dialog/dialogDefinition.js" />
    <install as="js/ckeditor/plugins/div/dialogs/div.js" name="js/ckeditor/plugins/div/dialogs/div.js" />
-   <install as="js/ckeditor/plugins/docprops/plugin.js" name="js/ckeditor/plugins/docprops/plugin.js" />
    <install as="js/ckeditor/plugins/docprops/dialogs/docprops.js" name="js/ckeditor/plugins/docprops/dialogs/docprops.js" />
+   <install as="js/ckeditor/plugins/docprops/plugin.js" name="js/ckeditor/plugins/docprops/plugin.js" />
    <install as="js/ckeditor/plugins/find/dialogs/find.js" name="js/ckeditor/plugins/find/dialogs/find.js" />
    <install as="js/ckeditor/plugins/flash/dialogs/flash.js" name="js/ckeditor/plugins/flash/dialogs/flash.js" />
    <install as="js/ckeditor/plugins/flash/images/placeholder.png" name="js/ckeditor/plugins/flash/images/placeholder.png" />
@@ -800,8 +793,6 @@
    <install as="js/ckeditor/plugins/pagebreak/images/pagebreak.gif" name="js/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
    <install as="js/ckeditor/plugins/pastefromword/filter/default.js" name="js/ckeditor/plugins/pastefromword/filter/default.js" />
    <install as="js/ckeditor/plugins/pastetext/dialogs/pastetext.js" name="js/ckeditor/plugins/pastetext/dialogs/pastetext.js" />
-   <install as="js/ckeditor/plugins/placeholder/placeholder.gif" name="js/ckeditor/plugins/placeholder/placeholder.gif" />
-   <install as="js/ckeditor/plugins/placeholder/plugin.js" name="js/ckeditor/plugins/placeholder/plugin.js" />
    <install as="js/ckeditor/plugins/placeholder/dialogs/placeholder.js" name="js/ckeditor/plugins/placeholder/dialogs/placeholder.js" />
    <install as="js/ckeditor/plugins/placeholder/lang/bg.js" name="js/ckeditor/plugins/placeholder/lang/bg.js" />
    <install as="js/ckeditor/plugins/placeholder/lang/cs.js" name="js/ckeditor/plugins/placeholder/lang/cs.js" />
@@ -831,6 +822,8 @@
    <install as="js/ckeditor/plugins/placeholder/lang/uk.js" name="js/ckeditor/plugins/placeholder/lang/uk.js" />
    <install as="js/ckeditor/plugins/placeholder/lang/vi.js" name="js/ckeditor/plugins/placeholder/lang/vi.js" />
    <install as="js/ckeditor/plugins/placeholder/lang/zh-cn.js" name="js/ckeditor/plugins/placeholder/lang/zh-cn.js" />
+   <install as="js/ckeditor/plugins/placeholder/placeholder.gif" name="js/ckeditor/plugins/placeholder/placeholder.gif" />
+   <install as="js/ckeditor/plugins/placeholder/plugin.js" name="js/ckeditor/plugins/placeholder/plugin.js" />
    <install as="js/ckeditor/plugins/preview/preview.html" name="js/ckeditor/plugins/preview/preview.html" />
    <install as="js/ckeditor/plugins/scayt/dialogs/options.js" name="js/ckeditor/plugins/scayt/dialogs/options.js" />
    <install as="js/ckeditor/plugins/scayt/dialogs/toolbar.css" name="js/ckeditor/plugins/scayt/dialogs/toolbar.css" />
@@ -893,10 +886,10 @@
    <install as="js/ckeditor/plugins/specialchar/lang/zh-cn.js" name="js/ckeditor/plugins/specialchar/lang/zh-cn.js" />
    <install as="js/ckeditor/plugins/styles/styles/default.js" name="js/ckeditor/plugins/styles/styles/default.js" />
    <install as="js/ckeditor/plugins/stylesheetparser/plugin.js" name="js/ckeditor/plugins/stylesheetparser/plugin.js" />
-   <install as="js/ckeditor/plugins/syntaxhighlight/plugin.js" name="js/ckeditor/plugins/syntaxhighlight/plugin.js" />
    <install as="js/ckeditor/plugins/syntaxhighlight/dialogs/syntaxhighlight.js" name="js/ckeditor/plugins/syntaxhighlight/dialogs/syntaxhighlight.js" />
    <install as="js/ckeditor/plugins/syntaxhighlight/images/syntaxhighlight.gif" name="js/ckeditor/plugins/syntaxhighlight/images/syntaxhighlight.gif" />
    <install as="js/ckeditor/plugins/syntaxhighlight/lang/en.js" name="js/ckeditor/plugins/syntaxhighlight/lang/en.js" />
+   <install as="js/ckeditor/plugins/syntaxhighlight/plugin.js" name="js/ckeditor/plugins/syntaxhighlight/plugin.js" />
    <install as="js/ckeditor/plugins/table/dialogs/table.js" name="js/ckeditor/plugins/table/dialogs/table.js" />
    <install as="js/ckeditor/plugins/tableresize/plugin.js" name="js/ckeditor/plugins/tableresize/plugin.js" />
    <install as="js/ckeditor/plugins/tabletools/dialogs/tableCell.js" name="js/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
@@ -905,8 +898,6 @@
    <install as="js/ckeditor/plugins/templates/templates/images/template1.gif" name="js/ckeditor/plugins/templates/templates/images/template1.gif" />
    <install as="js/ckeditor/plugins/templates/templates/images/template2.gif" name="js/ckeditor/plugins/templates/templates/images/template2.gif" />
    <install as="js/ckeditor/plugins/templates/templates/images/template3.gif" name="js/ckeditor/plugins/templates/templates/images/template3.gif" />
-   <install as="js/ckeditor/plugins/uicolor/plugin.js" name="js/ckeditor/plugins/uicolor/plugin.js" />
-   <install as="js/ckeditor/plugins/uicolor/uicolor.gif" name="js/ckeditor/plugins/uicolor/uicolor.gif" />
    <install as="js/ckeditor/plugins/uicolor/dialogs/uicolor.js" name="js/ckeditor/plugins/uicolor/dialogs/uicolor.js" />
    <install as="js/ckeditor/plugins/uicolor/lang/bg.js" name="js/ckeditor/plugins/uicolor/lang/bg.js" />
    <install as="js/ckeditor/plugins/uicolor/lang/cs.js" name="js/ckeditor/plugins/uicolor/lang/cs.js" />
@@ -937,12 +928,14 @@
    <install as="js/ckeditor/plugins/uicolor/lang/uk.js" name="js/ckeditor/plugins/uicolor/lang/uk.js" />
    <install as="js/ckeditor/plugins/uicolor/lang/vi.js" name="js/ckeditor/plugins/uicolor/lang/vi.js" />
    <install as="js/ckeditor/plugins/uicolor/lang/zh-cn.js" name="js/ckeditor/plugins/uicolor/lang/zh-cn.js" />
-   <install as="js/ckeditor/plugins/uicolor/yui/yui.js" name="js/ckeditor/plugins/uicolor/yui/yui.js" />
+   <install as="js/ckeditor/plugins/uicolor/plugin.js" name="js/ckeditor/plugins/uicolor/plugin.js" />
+   <install as="js/ckeditor/plugins/uicolor/uicolor.gif" name="js/ckeditor/plugins/uicolor/uicolor.gif" />
    <install as="js/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" name="js/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" />
    <install as="js/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" name="js/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" />
    <install as="js/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" name="js/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" />
    <install as="js/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" name="js/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" />
    <install as="js/ckeditor/plugins/uicolor/yui/assets/yui.css" name="js/ckeditor/plugins/uicolor/yui/assets/yui.css" />
+   <install as="js/ckeditor/plugins/uicolor/yui/yui.js" name="js/ckeditor/plugins/uicolor/yui/yui.js" />
    <install as="js/ckeditor/plugins/wsc/dialogs/ciframe.html" name="js/ckeditor/plugins/wsc/dialogs/ciframe.html" />
    <install as="js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" name="js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
    <install as="js/ckeditor/plugins/wsc/dialogs/wsc.css" name="js/ckeditor/plugins/wsc/dialogs/wsc.css" />
@@ -952,8 +945,6 @@
    <install as="js/ckeditor/skins/kama/editor.css" name="js/ckeditor/skins/kama/editor.css" />
    <install as="js/ckeditor/skins/kama/icons.png" name="js/ckeditor/skins/kama/icons.png" />
    <install as="js/ckeditor/skins/kama/icons_rtl.png" name="js/ckeditor/skins/kama/icons_rtl.png" />
-   <install as="js/ckeditor/skins/kama/skin.js" name="js/ckeditor/skins/kama/skin.js" />
-   <install as="js/ckeditor/skins/kama/templates.css" name="js/ckeditor/skins/kama/templates.css" />
    <install as="js/ckeditor/skins/kama/images/dialog_sides.gif" name="js/ckeditor/skins/kama/images/dialog_sides.gif" />
    <install as="js/ckeditor/skins/kama/images/dialog_sides.png" name="js/ckeditor/skins/kama/images/dialog_sides.png" />
    <install as="js/ckeditor/skins/kama/images/dialog_sides_rtl.png" name="js/ckeditor/skins/kama/images/dialog_sides_rtl.png" />
@@ -962,12 +953,12 @@
    <install as="js/ckeditor/skins/kama/images/sprites.png" name="js/ckeditor/skins/kama/images/sprites.png" />
    <install as="js/ckeditor/skins/kama/images/sprites_ie6.png" name="js/ckeditor/skins/kama/images/sprites_ie6.png" />
    <install as="js/ckeditor/skins/kama/images/toolbar_start.gif" name="js/ckeditor/skins/kama/images/toolbar_start.gif" />
+   <install as="js/ckeditor/skins/kama/skin.js" name="js/ckeditor/skins/kama/skin.js" />
+   <install as="js/ckeditor/skins/kama/templates.css" name="js/ckeditor/skins/kama/templates.css" />
    <install as="js/ckeditor/skins/office2003/dialog.css" name="js/ckeditor/skins/office2003/dialog.css" />
    <install as="js/ckeditor/skins/office2003/editor.css" name="js/ckeditor/skins/office2003/editor.css" />
    <install as="js/ckeditor/skins/office2003/icons.png" name="js/ckeditor/skins/office2003/icons.png" />
    <install as="js/ckeditor/skins/office2003/icons_rtl.png" name="js/ckeditor/skins/office2003/icons_rtl.png" />
-   <install as="js/ckeditor/skins/office2003/skin.js" name="js/ckeditor/skins/office2003/skin.js" />
-   <install as="js/ckeditor/skins/office2003/templates.css" name="js/ckeditor/skins/office2003/templates.css" />
    <install as="js/ckeditor/skins/office2003/images/dialog_sides.gif" name="js/ckeditor/skins/office2003/images/dialog_sides.gif" />
    <install as="js/ckeditor/skins/office2003/images/dialog_sides.png" name="js/ckeditor/skins/office2003/images/dialog_sides.png" />
    <install as="js/ckeditor/skins/office2003/images/dialog_sides_rtl.png" name="js/ckeditor/skins/office2003/images/dialog_sides_rtl.png" />
@@ -975,12 +966,12 @@
    <install as="js/ckeditor/skins/office2003/images/noimage.png" name="js/ckeditor/skins/office2003/images/noimage.png" />
    <install as="js/ckeditor/skins/office2003/images/sprites.png" name="js/ckeditor/skins/office2003/images/sprites.png" />
    <install as="js/ckeditor/skins/office2003/images/sprites_ie6.png" name="js/ckeditor/skins/office2003/images/sprites_ie6.png" />
+   <install as="js/ckeditor/skins/office2003/skin.js" name="js/ckeditor/skins/office2003/skin.js" />
+   <install as="js/ckeditor/skins/office2003/templates.css" name="js/ckeditor/skins/office2003/templates.css" />
    <install as="js/ckeditor/skins/v2/dialog.css" name="js/ckeditor/skins/v2/dialog.css" />
    <install as="js/ckeditor/skins/v2/editor.css" name="js/ckeditor/skins/v2/editor.css" />
    <install as="js/ckeditor/skins/v2/icons.png" name="js/ckeditor/skins/v2/icons.png" />
    <install as="js/ckeditor/skins/v2/icons_rtl.png" name="js/ckeditor/skins/v2/icons_rtl.png" />
-   <install as="js/ckeditor/skins/v2/skin.js" name="js/ckeditor/skins/v2/skin.js" />
-   <install as="js/ckeditor/skins/v2/templates.css" name="js/ckeditor/skins/v2/templates.css" />
    <install as="js/ckeditor/skins/v2/images/dialog_sides.gif" name="js/ckeditor/skins/v2/images/dialog_sides.gif" />
    <install as="js/ckeditor/skins/v2/images/dialog_sides.png" name="js/ckeditor/skins/v2/images/dialog_sides.png" />
    <install as="js/ckeditor/skins/v2/images/dialog_sides_rtl.png" name="js/ckeditor/skins/v2/images/dialog_sides_rtl.png" />
@@ -989,10 +980,13 @@
    <install as="js/ckeditor/skins/v2/images/sprites.png" name="js/ckeditor/skins/v2/images/sprites.png" />
    <install as="js/ckeditor/skins/v2/images/sprites_ie6.png" name="js/ckeditor/skins/v2/images/sprites_ie6.png" />
    <install as="js/ckeditor/skins/v2/images/toolbar_start.gif" name="js/ckeditor/skins/v2/images/toolbar_start.gif" />
+   <install as="js/ckeditor/skins/v2/skin.js" name="js/ckeditor/skins/v2/skin.js" />
+   <install as="js/ckeditor/skins/v2/templates.css" name="js/ckeditor/skins/v2/templates.css" />
    <install as="js/ckeditor/themes/default/theme.js" name="js/ckeditor/themes/default/theme.js" />
    <install as="Horde/Editor.php" name="lib/Horde/Editor.php" />
    <install as="Horde/Editor/Ckeditor.php" name="lib/Horde/Editor/Ckeditor.php" />
    <install as="Horde/Editor/Exception.php" name="lib/Horde/Editor/Exception.php" />
+   <install as="LICENSE" name="LICENSE" />
   </filelist>
  </phprelease>
  <changelog>
@@ -1257,7 +1251,7 @@ Initial packaging
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-09-19</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
