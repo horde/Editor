@@ -16,7 +16,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-27</date>
  <version>
   <release>2.0.6</release>
   <api>1.0.0</api>
@@ -30,6 +30,13 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <dir name="doc">
+    <dir name="Horde">
+     <dir name="Editor">
+      <file name="CHANGES" role="doc" />
+     </dir> <!-- /doc/Horde/Editor -->
+    </dir> <!-- /doc/Horde -->
+   </dir> <!-- /doc -->
    <dir name="js">
     <dir name="ckeditor">
      <dir name="images">
@@ -629,6 +636,7 @@
  </usesrole>
  <phprelease>
   <filelist>
+   <install as="CHANGES" name="doc/Horde/Editor/CHANGES" />
    <install as="js/ckeditor/ckeditor.js" name="js/ckeditor/ckeditor.js" />
    <install as="js/ckeditor/ckeditor_basic.js" name="js/ckeditor/ckeditor_basic.js" />
    <install as="js/ckeditor/config.js" name="js/ckeditor/config.js" />
@@ -1249,7 +1257,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-17</date>
+   <date>2017-10-27</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
    </notes>
