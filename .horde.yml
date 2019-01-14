@@ -2,7 +2,7 @@
 id: Editor
 name: Editor
 full: WYSIWYG editor library
-description: >
+description: >-
   The Horde_Editor package provides an API to generate the code necessary for
   embedding javascript RTE editors in a web page.
 list: dev
