@@ -35,9 +35,6 @@
     "autoload": {
         "psr-0": {
             "Horde_Editor": "lib/"
-        },
-        "psr-4": {
-            "Horde\\Editor\\": "src/"
         }
     }
 }
