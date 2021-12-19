@@ -4,7 +4,7 @@
     "description": "WYSIWYG editor library",
     "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Editor",
-    "license": "LGPL-2.1",
+    "license": "LGPL-2.1-only",
     "authors": [
         {
             "name": "Chuck Hagenbuch",
@@ -25,8 +25,8 @@
         }
     ],
     "require": {
-        "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0",
-        "php": "^7",
+        "horde/horde-installer-plugin": "^2 || dev-FRAMEWORK_6_0",
+        "php": "^7.4 || ^8",
         "horde/browser": "^3 || dev-FRAMEWORK_6_0",
         "horde/exception": "^3 || dev-FRAMEWORK_6_0",
         "horde/serialize": "^3 || dev-FRAMEWORK_6_0"
