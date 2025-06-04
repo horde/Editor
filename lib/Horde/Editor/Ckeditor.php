@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
  *
@@ -34,7 +35,7 @@ class Horde_Editor_Ckeditor extends Horde_Editor
      *   - id: (string) The ID of the text area to turn into an editor. If
      *         empty, won't automatically load the editor.
      */
-    public function initialize(array $params = array())
+    public function initialize(array $params = [])
     {
         if (!$this->supportedByBrowser()) {
             return;
@@ -51,20 +52,20 @@ class Horde_Editor_Ckeditor extends Horde_Editor
                 $params['config'] = Horde_Serialize::serialize($params['config'], Horde_Serialize::JSON);
             }
         } else {
-            $params['config'] = array();
+            $params['config'] = [];
         }
 
-        $this->_js = array(
-            'files' => array(
-                $ck_file
-            ),
-            'script' => array()
-        );
+        $this->_js = [
+            'files' => [
+                $ck_file,
+            ],
+            'script' => [],
+        ];
 
         if (isset($params['id'])) {
-            $this->_js['script'] = array(
-                'CKEDITOR.replace("' . $params['id'] . '",' . $params['config'] . ')'
-            );
+            $this->_js['script'] = [
+                'CKEDITOR.replace("' . $params['id'] . '",' . $params['config'] . ')',
+            ];
         }
     }
 
@@ -80,18 +81,18 @@ class Horde_Editor_Ckeditor extends Horde_Editor
         }
 
         switch ($this->_browser->getBrowser()) {
-        case 'webkit':
-        case 'msie':
-        case 'mozilla':
-        case 'opera':
-            // MSIE: 5.5+
-            // Firefox: 1.5+
-            // Opera: 9.5+
-            // Safari: 3.0+
-            return $this->_browser->hasFeature('rte');
+            case 'webkit':
+            case 'msie':
+            case 'mozilla':
+            case 'opera':
+                // MSIE: 5.5+
+                // Firefox: 1.5+
+                // Opera: 9.5+
+                // Safari: 3.0+
+                return $this->_browser->hasFeature('rte');
 
-        default:
-            return false;
+            default:
+                return false;
         }
     }
 }

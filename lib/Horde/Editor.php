@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2003-2017 Horde LLC (http://www.horde.org/)
  *
@@ -55,9 +56,7 @@ class Horde_Editor
      *
      * @param array $params  Additional parameters.
      */
-    public function initialize(array $params = array())
-    {
-    }
+    public function initialize(array $params = []) {}
 
     /**
      * Returns the JS code needed to instantiate the editor.
