@@ -22,7 +22,7 @@ authors:
     active: false
     role: lead
 version:
-  release: 3.0.0alpha5
+  release: 3.0.0-alpha5
   api: 3.0.0alpha1
 state:
   release: alpha
@@ -32,7 +32,7 @@ license:
   uri: http://www.horde.org/licenses/lgpl21
 dependencies:
   required:
-    php: ^7.4 || ^8
+    php: ^8.1
     composer:
       horde/browser: ^3
       horde/exception: ^3
