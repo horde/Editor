@@ -6,7 +6,7 @@ description: >-
   A library to generate the code necessary for embedding javascript RTE editors
   in a web page.
 list: dev
-type: library
+type: horde-library
 homepage: https://www.horde.org/libraries/Horde_Editor
 authors:
   -
@@ -37,3 +37,8 @@ dependencies:
       horde/browser: ^3
       horde/exception: ^3
       horde/serialize: ^3
+keywords:
+  - rte
+  - javascript
+  - wrapper
+vendor: horde

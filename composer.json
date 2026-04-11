@@ -34,11 +34,14 @@
     },
     "autoload-dev": {},
     "config": {
-        "allow-plugins": {}
+        "allow-plugins": {
+            "horde/horde-installer-plugin": true
+        }
     },
     "extra": {
         "branch-alias": {
             "dev-FRAMEWORK_6_0": "3.x-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
