@@ -16,7 +16,12 @@
             "role": "lead"
         }
     ],
-    "time": "2025-06-04",
+    "keywords": [
+        "rte",
+        "javascript",
+        "wrapper"
+    ],
+    "time": "2026-04-11",
     "repositories": [],
     "require": {
         "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || ^3 || ^2",
@@ -30,9 +35,16 @@
     "autoload": {
         "psr-0": {
             "Horde_Editor": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Editor\\": "src/"
         }
     },
-    "autoload-dev": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Horde\\Editor\\Test\\": "test/"
+        }
+    },
     "config": {
         "allow-plugins": {
             "horde/horde-installer-plugin": true
@@ -42,6 +54,5 @@
         "branch-alias": {
             "dev-FRAMEWORK_6_0": "3.x-dev"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

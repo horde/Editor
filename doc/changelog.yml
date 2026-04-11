@@ -1,4 +1,20 @@
 ---
+3.0.0-beta1:
+  api: 3.0.0-beta1
+  state:
+    release: beta
+    api: beta
+  date: 2026-04-11
+  license:
+    identifier: LGPL-2.1-only
+    uri: https://spdx.org/licenses/LGPL-2.1-only.html
+  notes: |-
+    test: Update test suite
+    feat: Modern equivalent of Horde/Editor
+    fix: Serialization issue
+    chore: update metadata .gitignore entries, .horde.yml keywords
+    test: Initialize a test suite. Editor didn't have one.
+    style: php-cs-fixer
 3.0.0-alpha5:
   api: 3.0.0-alpha1
   state:
