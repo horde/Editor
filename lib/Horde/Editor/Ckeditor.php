@@ -52,7 +52,7 @@ class Horde_Editor_Ckeditor extends Horde_Editor
                 $params['config'] = Horde_Serialize::serialize($params['config'], Horde_Serialize::JSON);
             }
         } else {
-            $params['config'] = [];
+            $params['config'] = '{}';
         }
 
         $this->_js = [
