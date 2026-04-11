@@ -9,7 +9,7 @@
          displayDetailsOnTestsThatTriggerWarnings="true"
          failOnDeprecation="true"
          failOnNotice="true"
-         failOnWarning="false">
+         failOnWarning="true">
     <testsuites>
         <testsuite name="unit">
             <directory>test/unit</directory>

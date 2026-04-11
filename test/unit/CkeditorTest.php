@@ -170,14 +170,10 @@ class CkeditorTest extends TestCase
     }
 
     /**
-     * Tests the no-config code path.
-     *
-     * Note: Ckeditor.php:55-56 sets $params['config'] = [] when no config
-     * is provided. At line 67, this array is concatenated into a string,
-     * triggering a PHP "Array to string conversion" warning. This is a
-     * pre-existing bug in the source code.
+     * Tests the no-config code path produces valid JavaScript with an
+     * empty JSON object as the config parameter.
      */
-    public function testInitializeWithoutConfigUsesEmptyArray(): void
+    public function testInitializeWithoutConfigUsesEmptyObject(): void
     {
         $editor = new Horde_Editor_Ckeditor($this->createSupportedBrowserStub());
         $editor->initialize(['id' => 'editor1']);
@@ -185,7 +181,7 @@ class CkeditorTest extends TestCase
         $js = $editor->getJS();
         $script = $js['script'][0];
 
-        $this->assertStringContainsString('CKEDITOR.replace("editor1"', $script);
+        $this->assertSame('CKEDITOR.replace("editor1",{})', $script);
     }
 
     public function testGetJsReturnsFilesAndScriptKeys(): void
