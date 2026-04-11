@@ -37,6 +37,7 @@ dependencies:
       horde/browser: ^3
       horde/exception: ^3
       horde/serialize: ^3
+      tinymce/tinymce: ^7 || ^8
 keywords:
   - rte
   - javascript
