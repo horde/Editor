@@ -21,7 +21,7 @@
         "javascript",
         "wrapper"
     ],
-    "time": "2026-04-11",
+    "time": "2026-04-12",
     "repositories": [],
     "require": {
         "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || ^3 || ^2",
@@ -54,6 +54,13 @@
     "extra": {
         "branch-alias": {
             "dev-FRAMEWORK_6_0": "3.x-dev"
-        }
+        },
+        "horde-vendor-assets": [
+            {
+                "package": "tinymce/tinymce",
+                "type": "js",
+                "target": "tinymce"
+            }
+        ]
     }
 }
