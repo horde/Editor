@@ -43,6 +43,11 @@ keywords:
   - javascript
   - wrapper
 vendor: horde
+vendor-assets:
+  - package: tinymce/tinymce
+    type: js
+    source: ""
+    target: tinymce
 quality:
   phpstan:
     level: 9
