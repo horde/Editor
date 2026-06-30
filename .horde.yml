@@ -9,14 +9,12 @@ list: dev
 type: horde-library
 homepage: https://www.horde.org/libraries/Horde_Editor
 authors:
-  -
-    name: Chuck Hagenbuch
+  - name: Chuck Hagenbuch
     user: chuck
     email: chuck@horde.org
     active: false
     role: lead
-  -
-    name: Michael Slusarz
+  - name: Michael Slusarz
     user: slusarz
     email: slusarz@horde.org
     active: false
@@ -44,11 +42,37 @@ keywords:
   - wrapper
 vendor: horde
 vendor-assets:
-  -
-    package: tinymce/tinymce
+  - package: tinymce/tinymce
     type: js
-    source:
+    source: null
     target: tinymce
 quality:
   phpstan:
     level: 9
+ci-platform:
+  '8.1':
+    - php: ^8
+    - composer-plugin-api: ^2.2.0
+    - ext-dom
+  '8.2':
+    - php: ^8
+    - composer-plugin-api: ^2.2.0
+    - ext-dom
+  '8.3':
+    - php: ^8
+    - composer-plugin-api: ^2.2.0
+    - ext-dom
+  '8.4':
+    - php: ^8
+    - composer-plugin-api: ^2.2.0
+    - ext-dom
+  '8.5':
+    - php: ^8
+    - composer-plugin-api: ^2.2.0
+    - ext-dom
+  '8.6':
+    - php: ^8
+    - composer-plugin-api: ^2.2.0
+    - ext-dom
+ci-platform-flags:
+  needs_installer_plugin: false
