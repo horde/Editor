@@ -1,4 +1,14 @@
 ---
+3.0.0:
+  api: 3.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2026-06-30
+  license:
+    identifier: LGPL-2.1-only
+    uri: https://spdx.org/licenses/LGPL-2.1-only.html
+  notes: "chore: update CI\nchore: Update workflow dependency"
 3.0.0-beta2:
   api: 3.0.0-beta2
   state:
@@ -8,10 +18,7 @@
   license:
     identifier: LGPL-2.1-only
     uri: https://spdx.org/licenses/LGPL-2.1-only.html
-  notes: |-
-    chore: Add tinymce vendor-asset
-    chore: Add tinymce/tinymce dependency
-    feat: Add TinyMCE binding
+  notes: "chore: Add tinymce vendor-asset\nchore: Add tinymce/tinymce dependency\nfeat: Add TinyMCE binding"
 3.0.0-beta1:
   api: 3.0.0-beta1
   state:
@@ -21,13 +28,7 @@
   license:
     identifier: LGPL-2.1-only
     uri: https://spdx.org/licenses/LGPL-2.1-only.html
-  notes: |-
-    test: Update test suite
-    feat: Modern equivalent of Horde/Editor
-    fix: Serialization issue
-    chore: update metadata .gitignore entries, .horde.yml keywords
-    test: Initialize a test suite. Editor didn't have one.
-    style: php-cs-fixer
+  notes: "test: Update test suite\nfeat: Modern equivalent of Horde/Editor\nfix: Serialization issue\nchore: update metadata .gitignore entries, .horde.yml keywords\ntest: Initialize a test suite. Editor didn't have one.\nstyle: php-cs-fixer"
 3.0.0-alpha5:
   api: 3.0.0-alpha1
   state:
@@ -37,8 +38,7 @@
   license:
     identifier: LGPL-2.1-only
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    style: Apply php-cs-fixer php8.3+ rules
+  notes: "style: Apply php-cs-fixer php8.3+ rules\n"
 3.0.0-alpha4:
   api: 3.0.0alpha1
   state:
@@ -48,10 +48,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 3.0.0alpha4
-    [rla] Alpha Release for PHP 8.
-    |+
+  notes: "Original version string was 3.0.0alpha4\n[rla] Alpha Release for PHP 8.\n|+\n"
 3.0.0-alpha3:
   api: 3.0.0alpha1
   state:
@@ -61,9 +58,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |-
-    Original version string was 3.0.0alpha3
-    |+
+  notes: "Original version string was 3.0.0alpha3\n|+"
 3.0.0-alpha2:
   api: 3.0.0alpha1
   state:
@@ -73,9 +68,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |-
-    Original version string was 3.0.0alpha2
-    |+
+  notes: "Original version string was 3.0.0alpha2\n|+"
 3.0.0-alpha1:
   api: 3.0.0alpha1
   state:
@@ -85,8 +78,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 3.0.0alpha1
+  notes: "Original version string was 3.0.0alpha1\n"
 2.0.5:
   api: 1.0.0
   state:
@@ -96,8 +88,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Mark PHP 7 as supported.
+  notes: "[jan] Mark PHP 7 as supported.\n"
 2.0.4:
   api: 1.0.0
   state:
@@ -107,7 +98,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: ~
+  notes: null
 2.0.3:
   api: 1.0.0
   state:
@@ -117,8 +108,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Update CKEditor to v3.6.6.
+  notes: "[mms] Update CKEditor to v3.6.6.\n"
 2.0.2:
   api: 1.0.0
   state:
@@ -128,8 +118,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Move ckeditor javascript files into a separate ckeditor directory (Request #11950).
+  notes: "[mms] Move ckeditor javascript files into a separate ckeditor directory (Request #11950).\n"
 2.0.1:
   api: 1.0.0
   state:
@@ -139,45 +128,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Use new Horde_Test layout.
-2.0.0-beta1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: stable
-  date: 2012-07-19
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 2.0.0beta1
-    First beta release for Horde 5.
-2.0.0-alpha1:
-  api: 1.0.0
-  state:
-    release: alpha
-    api: stable
-  date: 2012-07-05
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 2.0.0alpha1
-    First alpha release for Horde 5.
-    [mms] Update CKEditor to v3.6.3.
-2.0.0-RC1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: stable
-  date: 2012-10-26
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 2.0.0RC1
-    [mms] Update CKEditor to v3.6.5.
+  notes: "[mms] Use new Horde_Test layout.\n"
 2.0.0:
   api: 1.0.0
   state:
@@ -187,8 +138,37 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release for Horde 5.
+  notes: "First stable release for Horde 5.\n"
+2.0.0-RC1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: stable
+  date: 2012-10-26
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 2.0.0RC1\n[mms] Update CKEditor to v3.6.5.\n"
+2.0.0-beta1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: stable
+  date: 2012-07-19
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 2.0.0beta1\nFirst beta release for Horde 5.\n"
+2.0.0-alpha1:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: stable
+  date: 2012-07-05
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 2.0.0alpha1\nFirst alpha release for Horde 5.\n[mms] Update CKEditor to v3.6.3.\n"
 1.0.2:
   api: 1.0.0
   state:
@@ -198,8 +178,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [rla] Add license file.
+  notes: "[rla] Add license file.\n"
 1.0.1:
   api: 1.0.0
   state:
@@ -209,59 +188,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Upgrade ckeditor to v3.5.4.
-1.0.0-beta1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: beta
-  date: 2011-03-16
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 1.0.0beta1
-    First beta release for Horde 4.
-1.0.0-alpha1:
-  api: 1.0.0
-  state:
-    release: alpha
-    api: alpha
-  date: 2011-03-08
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 1.0.0alpha1
-    First alpha release for Horde 4.
-    Removed Xinha driver.
-    Added CKEditor driver.
-    Removed FCKEditor driver
-1.0.0-RC2:
-  api: 1.0.0
-  state:
-    release: beta
-    api: beta
-  date: 2011-03-29
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 1.0.0RC2
-    Second release candidate for Horde 4.
-1.0.0-RC1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: beta
-  date: 2011-03-22
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Original version string was 1.0.0RC1
-    First release candidate for Horde 4.
+  notes: "Upgrade ckeditor to v3.5.4.\n"
 1.0.0:
   api: 1.0.0
   state:
@@ -271,8 +198,47 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release for Horde 4.
+  notes: "First stable release for Horde 4.\n"
+1.0.0-RC2:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-29
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 1.0.0RC2\nSecond release candidate for Horde 4.\n"
+1.0.0-RC1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-22
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 1.0.0RC1\nFirst release candidate for Horde 4.\n"
+1.0.0-beta1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-16
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 1.0.0beta1\nFirst beta release for Horde 4.\n"
+1.0.0-alpha1:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2011-03-08
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Original version string was 1.0.0alpha1\nFirst alpha release for Horde 4.\nRemoved Xinha driver.\nAdded CKEditor driver.\nRemoved FCKEditor driver\n"
 0.0.2:
   api: 0.0.2
   state:
@@ -282,9 +248,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Removed TinyMCE driver.
-    Converted to package.xml 2.0 for pear.horde.org
+  notes: "Removed TinyMCE driver.\nConverted to package.xml 2.0 for pear.horde.org\n"
 0.0.1:
   api: 0.0.1
   state:
@@ -294,5 +258,4 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Initial packaging
+  notes: "Initial packaging\n"
